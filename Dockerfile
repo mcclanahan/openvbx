@@ -4,7 +4,7 @@ MAINTAINER CentruyLink
 # Install packages
 RUN apt-get update && \
  DEBIAN_FRONTEND=noninteractive apt-get -y upgrade && \
- DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor pwgen unzip && \
+ DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor pwgen unzip wget && \
  apt-get -y install mysql-client
 
 # Download OpenVBX into /app
